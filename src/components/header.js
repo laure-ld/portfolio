@@ -1,15 +1,17 @@
+import  { Link } from 'react-router-dom';
+import React from 'react';
 import '../styles/header.scss';
 
 function Header () {
     return (
-        <div className="container">
+        <section className="container">
             <p>Portfolio</p>
-            <ul>
-                <li>Mes projets</li>
-                <li>Mes compétences</li>
-                <li>Informations</li>
-            </ul>
-        </div>
+            <div className='menu'>
+                <Link to="/">Mes projets</Link>
+                <Link to="/">Mes compétences</Link>
+                <Link to="/">Mes informations</Link>
+            </div>
+        </section>
     )
 }
 

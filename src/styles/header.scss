@@ -3,8 +3,24 @@
 .container {
     background-color: $greencolor;
     color: $second-color;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+
+    p{
+        padding-left: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $second-color;
+        gap: 15px;
+        display: flex;
+        padding: 20px;
+    }
+
+    .menu {
+        display: flex;
+    }
 }
 
-ul{
-    list-style-type: none;
-}
