@@ -1,0 +1,56 @@
+@use './color' as *;
+
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 4rem;
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        h2 {
+            font-size: 2rem;
+            color: $primary-color;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                font-size: 1.2rem;
+                color: $second-color;
+            }
+        }
+
+        .download-btn {
+            background-color: $greencolor;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken($greencolor, 10%);
+            }
+        }
+    }
+
+    .about-media {
+        display: flex;
+        justify-content: center;
+
+        .about-video {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}
