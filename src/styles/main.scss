@@ -14,7 +14,8 @@
 
         h2 {
             font-size: 2rem;
-            color: $primary-color;
+            color: $greencolor;
+            text-align: center;
         }
 
         ul {
@@ -27,18 +28,20 @@
             }
         }
 
-        .download-btn {
-            background-color: $greencolor;
-            color: white;
-            padding: 0.8rem 1.5rem;
+        .button {
             text-align: center;
-            text-decoration: none;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            .download-btn {
+                background-color: $greencolor;
+                color: white;
+                padding: 0.8rem 1.5rem;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 25px;
+                cursor: pointer;
 
-            &:hover {
-                background-color: darken($greencolor, 10%);
+                &:hover {
+                    background-color: darken($greencolor, 10%);
+                }
             }
         }
     }
@@ -47,10 +50,9 @@
         display: flex;
         justify-content: center;
 
-        .about-video {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
+        video {
+            border-radius: 40% 60% 32% 68% / 30% 43% 57% 70% ; 
+            width: 70%;
         }
     }
 }
