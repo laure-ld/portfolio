@@ -25,7 +25,7 @@ function About() {
     return (
     <section class="about-me">
         <div className="about-media">
-                <video ref={videoRef} src="me.mp4" muted />
+                <video ref={videoRef} src='itsme.mp4' muted />
         </div>
         <div class="about-content">
             <h2>À propos de moi</h2>
@@ -34,7 +34,9 @@ function About() {
                 <li><strong>Langages :</strong> HTML, CSS, JS, React...</li>
                 <li><strong>Objectif :</strong> Devenir [ton objectif, ex: Dev Fullstack ou Dev Blockchain]</li>
             </ul>
-            <a href="/chemin/vers/cv.pdf" download class="download-btn">Télécharger mon CV</a>
+            <div className='button'>
+                <a href="/chemin/vers/cv.pdf" download class="download-btn">Télécharger mon CV</a>
+            </div>
         </div>
     </section>
     )
