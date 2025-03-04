@@ -1,0 +1,10 @@
+@use './color' as *;
+
+.container {
+    background-color: $greencolor;
+    color: $second-color;
+}
+
+ul{
+    list-style-type: none;
+}
