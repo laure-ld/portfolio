@@ -1,11 +1,14 @@
-$primary-color: #FEF9DC;
-$second-color: #DC9F5C;
-$darker-color: #283518;
-$greencolor: #5F6B38;
-$brown-medium: #B96B25;
+$primary-color: #F8F8F8;  // fond
+$text-color: #212121;     // texte
+$accent-color: #1C3D5A;   // boutons, liens
+$hover-color: darken($accent-color, 10%);
 
 body {
     background-color: $primary-color;
-    color: $darker-color;
+    color: $primary-color;
     margin: 0;
+}
+
+p {
+    color: black;
 }
