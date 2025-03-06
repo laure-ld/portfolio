@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    padding: 0 20px;
+    padding: 20px;
 
     nav {
         display: flex;
@@ -31,7 +31,6 @@
             
             a { 
                 color: $primary-color;
-                text-decoration: none;
             }
         }
     }
