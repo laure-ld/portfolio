@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "image": "/images/img1.JPG",
+        "objectif": "Mettre en avant notre nouveau plat",
+        "description": "Découvrez notre burger édition limitée !",
+        "categorie": "Nouveauté"
+    },
+    {
+        "id": 2,
+        "image": "/images/img2.JPG",
+        "objectif": "Promotion Happy Hour",
+        "description": "Cocktails à -50% de 18h à 20h",
+        "categorie": "Promo"
+    }
+]
