@@ -1,21 +1,18 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
+import data from '../data-projects.json';
+import SlideContent from './slideContent';
 
 function Carrousel() {
-    const slides = [
-        { image: '/path/image1.jpg', alt: 'Projet 1' },
-        { image: '/path/image2.jpg', alt: 'Projet 2' },
-        // etc.
-    ];
     
 return (
     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-    {slides.map((slide, index) => (
-        <SwiperSlide key={index}>
-            <img src={slide.image} alt={slide.alt} />
-        </SwiperSlide>
+    {data.map((slide, index) => (
+    <SwiperSlide key={index} className='img'>
+        <SlideContent slide={slide} />
+    </SwiperSlide>
     ))}
     </Swiper>
 )

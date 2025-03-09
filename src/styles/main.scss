@@ -1,5 +1,7 @@
 @use './color' as *;
 
+//About 
+
 .about-me {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -48,5 +50,214 @@
                 }
             }
         }
+    }
+}
+.animation {
+    display: flex;
+    justify-content: center;
+}
+.menu-right-animation {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .circle-1 {
+        position: absolute;
+        border: 2px solid $accent-color;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        background-image: url('../../public/lune.jpg');
+    }
+    .circle {
+        position: absolute;
+        border: 2px solid $text-color;
+        border-radius: 50%;
+        animation: rotateReverse 10s linear infinite;
+
+        &:nth-child(2) {
+            width: 400px;
+            animation-duration: 30s;
+        }
+
+        &:nth-child(3) {
+            width: 500px;
+            animation-duration: 32s;
+        }
+    }
+
+    .menu-word {
+        font-size: 24px;
+        font-weight: bold;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+        // Animations
+
+@keyframes rotateReverse {
+    0% {
+        transform: rotate(190deg);
+    }
+    50% {
+        transform: rotate(220deg);
+    }
+    100% {
+        transform: rotate(190deg);
+    }
+}
+
+// Carrousel 
+.slide-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+
+    .slide-image {
+        position: absolute;
+        width: 100%;
+        transition: all 1s ease-in-out;
+    }
+
+    .slide-info {
+        position: absolute;
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+    }
+
+    &.full {
+        transform: scale(1);
+        .slide-info {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+    }
+
+    &.split {
+        .slide-image {
+            width: 50%;
+            left: 3rem;
+        }
+
+        .slide-info {
+            opacity: 1;
+            transform: translateX(0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            right: 3rem;
+            text-align: center;
+            background: $primary-color;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    }
+}
+
+// Skills
+.skill-container {
+    margin: 1rem 0;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .cards-skills {
+        border: 1px solid $text-color;
+        opacity: 0.5;
+        padding: 0.5rem;
+        border-radius: 4px;
+        box-shadow: -2px 3px 1px 0px rgba(121, 121, 121, 0.78);
+        transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover{
+            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: -2px 5px 5px rgba(121, 121, 121, 0.5);
+        }
+    }
+
+    .skill {
+        padding-top: 50px;
+        .schema-skills {
+            display: flex;
+            justify-content: center;
+    
+            img {
+                width: 40%;
+            }
+        }
+    }
+}
+
+
+.softSkill {
+    color: $text-color;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    line-height: 1.2;
+
+    .box {
+        margin: auto;
+        text-align: left;
+        padding: 20px 100px;
+        background-color: $box-color;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+        gap: 40px;
+        align-items: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px); 
+            box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.12); 
+        }
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        padding: 0;
+
+        li {
+            width: 150px;
+            text-align: center;
+            font-size: 20px;
+            letter-spacing: 0.5px;
+            transition: font-weight 0.3s ease, transform 0.4s ease;
+            &:hover {
+                font-weight: bold;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.newTech {
+    ul {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+    }
+    .circle-container {
+        border: 2px solid $text-color;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        padding: 10px;
     }
 }
