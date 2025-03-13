@@ -9,10 +9,10 @@ function About() {
             <p>Passionnée par le développement web, j’ai d’abord suivi un parcours en psychologie et ergonomie des IA avant de me tourner pleinement vers cette voie.Aujourd’hui, je me forme avec un objectif clair : devenir Architecte Blockchain.</p>
             <div className='buttons'> 
                 <div className='button-container'>
-                    <a href="/chemin/vers/cv.pdf" download className="download-btn">CV</a>
+                    <a href="/CV.pdf" download className="download-btn">CV</a>
                 </div>
-                <div className='button-container'>
-                    <a href="/chemin/vers/cv.pdf" download className="download-btn">GitHub</a>
+                <div  onClick={() => window.open("https://github.com/laure-ld", "_blank")} className='button-container'>
+                    <img src="/images/github.png" alt="GitHub"/>
                 </div>
             </div>   
         </div>
