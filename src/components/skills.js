@@ -3,7 +3,7 @@ function skills () {
         <div className="skill-container">
             <div className="skill">
                 <h2>Mes compétences</h2>
-                <button className="cards-skills">Retrouvez ma carte mental</button>
+                <button onClick={() => window.open("https://miro.com/app/board/uXjVIWwAwJY=/?share_link_id=448433351909", "_blank")} className="cards-skills">Retrouvez ma carte mental</button>
                 <div className="schema-skills">
                     <img src="/images/skills.png" alt="Mes compétences technique"/>
                 </div>
@@ -28,23 +28,14 @@ function skills () {
                             <li>Apprentissage autonome et montée en compétence</li>
                         </ul>
                 </div>
-            </div>
-            <div className="newTech">
-                <h2>Les techniques vers lesquels je me dirige</h2>
-                <ul>
-                    <li>
-                        <img className="circle-container" src="/images/skills.png" alt="Python logo" />
-                        <p>Python</p>
-                    </li>
-                    <li>
-                        <img className="circle-container" src="/images/skills.png" alt="Web3 logo" />
-                        <p>WEB3</p>
-                    </li>
-                    <li>
-                        <img className="circle-container" src="/images/skills.png" alt="FastAPI logo" />
-                        <p>FastAPI</p>
-                    </li>
-                </ul>
+                <div className="learn-skills">
+                    <h2>Les techniques vers lesquels je me dirige</h2>
+                        <ul>
+                            <li className="skill-circle">Python</li>
+                            <li className="skill-circle">WEB3</li>
+                            <li className="skill-circle">FastAPI</li>
+                        </ul>
+                </div>
             </div>
         </div>
     )
