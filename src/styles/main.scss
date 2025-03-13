@@ -40,14 +40,18 @@
             margin: 3rem 0;
 
             .button-container {
-                border: 2px solid black;
-                padding: 1rem 3rem;
-                border-radius: 4px;
+                border: 2px solid $accent-color;
+                height: 4rem;
+                width: 6rem;
+                border-radius: 25px;
                 box-shadow: -2px 3px 1px 0px rgba(121,121,121,0.78);
-
-                a {
-                    color: $text-color;
-                }
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                img {
+                        width: 40px;
+                    }
             }
         }
     }
@@ -113,14 +117,13 @@
 
 // Carrousel 
 .slide-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 500px;
     position: relative;
     overflow: hidden;
     transition: all 1s ease-in-out;
+    display: flex;
+    align-items: flex-start;
 
     .slide-image {
         position: absolute;
@@ -132,6 +135,7 @@
         position: absolute;
         opacity: 0;
         transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+        flex-direction: column;
     }
 
     &.full {
@@ -153,13 +157,14 @@
             transform: translateX(0);
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             width: 40%;
             right: 3rem;
             text-align: center;
             background: $primary-color;
             padding: 20px;
             border-radius: 10px;
+            gap: 10px;
         }
     }
 }
@@ -173,10 +178,10 @@
     text-align: center;
 
     .cards-skills {
-        border: 1px solid $text-color;
+        border: 1px solid $accent-color;
         opacity: 0.5;
         padding: 0.5rem;
-        border-radius: 4px;
+        border-radius: 10px;
         box-shadow: -2px 3px 1px 0px rgba(121, 121, 121, 0.78);
         transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -210,6 +215,8 @@
 
     .box {
         margin: auto;
+        width: 100%;
+        max-width: 800px;
         text-align: left;
         padding: 20px 100px;
         background-color: $box-color;
@@ -240,24 +247,25 @@
             letter-spacing: 0.5px;
             transition: font-weight 0.3s ease, transform 0.4s ease;
             &:hover {
-                font-weight: bold;
                 transform: scale(1.1);
             }
         }
     }
-}
-
-.newTech {
-    ul {
+    .learn-skills {
+        margin: 50px 0;
+        gap: 30px;
         display: flex;
-        gap: 50px;
-        justify-content: center;
-    }
-    .circle-container {
-        border: 2px solid $text-color;
+        flex-direction: column;
+        
+        .skill-circle {
+        border: 2px solid $accent-color;
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        padding: 10px;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
     }
+}
 }
