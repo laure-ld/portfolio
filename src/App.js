@@ -10,6 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/main" element={<Main />} />
         <Route path="/projets/:id" element={<ProjetDetail />} />
       </Routes>
       <Footer />
