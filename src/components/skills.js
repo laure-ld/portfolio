@@ -1,16 +1,16 @@
 function skills () {
     return(
         <div className="skill-container">
-            <div className="skill">
+            <div className="skill" id="competence">
                 <h2>Mes compétences</h2>
                 <button onClick={() => window.open("https://miro.com/app/board/uXjVIWwAwJY=/?share_link_id=448433351909", "_blank")} className="cards-skills">Retrouvez ma carte mental</button>
                 <div className="schema-skills">
                     <img src="/images/skills.png" alt="Mes compétences technique"/>
                 </div>
             </div>      
-            <div className="softSkill">
+            <div className="softSkill" id="soft">
                 <h2>Mes Soft skills</h2>
-                <div className="box">
+                <div className="box" >
                     <h3>Qualités interpersonnelles</h3>
                         <ul>
                             <li>Écoute active & empathie</li>

@@ -18,8 +18,13 @@ const SlideContent = ({ slide }) => {
                 <div className="slide-info">
                     <h3>{slide.name}</h3>
                     <p>{slide.objectif}</p>
-                    <p>{slide.description}</p>
-                    <p>{slide.language}</p>
+                    <p>{slide.date}</p>
+                    <p>Technologie utilisé dans ce projet : </p>
+                    <ul>
+                        {slide.technologie.map((tech, index) => (
+                            <li key={index}>{tech}</li>
+                        ))}
+                    </ul>
                 </div>
             </button>
         </div>
