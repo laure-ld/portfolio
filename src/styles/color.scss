@@ -45,3 +45,20 @@ a, li {
     font-family: 'Roboto', sans-serif;
     font-size: 20px ;
 }
+
+// responsie 
+
+@media screen and (max-width: 760px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    p, a {
+        font-size: 1rem;
+    }
+}

@@ -101,7 +101,7 @@
     }
 }
 
-        // Animations
+    // Animations
 
 @keyframes rotateReverse {
     0% {
@@ -115,6 +115,72 @@
     }
 }
 
+    // Responsive About 
+@media screen and (max-width: 767px) {
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        .about-content {
+        .buttons {
+            margin: 1rem 0;
+            gap: 2rem;
+            justify-content: center;
+    
+            .button-container {
+                height: 3rem;
+                width: 8rem;
+            }
+        }}
+        .animation {
+            .circle-1 {
+                height: 150px;
+                width: 150px;
+            }
+            .circle:nth-child(2) {
+                width: 200px;
+            }
+            .circle:nth-child(3) {
+                width: 250px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .about-me {
+        padding: 50px 2rem 100px 2rem;
+        margin: 0;
+
+        .about-content {
+            gap: 0;
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                margin: 15px 0;
+                font-size: 1rem;
+            }
+        }
+        .animation {
+            .circle-1 {
+                height: 200px;
+                width: 200px;
+            }
+            .circle:nth-child(2) {
+                width: 260px;
+            }
+            .circle:nth-child(3) {
+                width: 310px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-me {
+        padding: 100px 2rem;
+    }
+}
 // Carrousel 
 .slide-container {
     width: 100%;
@@ -124,6 +190,18 @@
     transition: all 1s ease-in-out;
     display: flex;
     align-items: flex-start;
+
+    p, li {
+        font-size: 18px;
+    }
+
+    .date {
+        font-size: 15px;
+    }
+
+    .objectif {
+        padding: 20px 0;
+    }
 
     .slide-image {
         position: absolute;
@@ -140,17 +218,18 @@
         flex-direction: column;
 
         ul {
-            display: flex
-        ;
+            display: flex;
             flex-direction: column;
             align-items: flex-start;
+            margin: 0;
+            padding: 0;
+            list-style: none;
         }
     }
 
     &.full {
         transform: scale(1);
         .slide-image {
-            width: auto; 
             max-height: 100%; 
             left: 50%;
             transform: translateX(-50%); 
@@ -174,15 +253,62 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            width: 40%;
-            right: 3rem;
+            width: 35%;
+            right: 5rem;
             text-align: center;
             background: $primary-color;
             padding: 20px;
-            border-radius: 10px;
-            gap: 10px;
         }
     }
+}
+
+    // responsive carrousel
+@media screen and (max-width: 767px) {
+    .slide-container{
+        height: 300px;
+        .date {
+            font-size: 12px;
+        }
+        .p {
+            font-size: 15px;
+        }
+        &.split {
+            .slide-image {
+                display: none;
+            }
+            .slide-info {
+                width: auto;
+                right: 0;
+
+                ul {
+                    flex-direction: row;
+                    gap: 5px;
+                    li {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .slide-container{
+        &.split {
+            .slide-info {
+                width: 32%;
+                padding: 50px 0;
+                align-items: center;
+                ul {
+                    flex-direction: row;
+                    gap: 5px;
+                    li {
+                    font-size: 15px;
+                    }
+                }
+            }
+        }
+    }  
 }
 
 // Skills
@@ -285,7 +411,117 @@
     }
 }
 }
+    // responsive Skills 
+    
+@media screen and (max-width: 767px) {
+    .skill-container {
+        margin: 1rem;
+        .skill {
+            .cards-skills {
+                font-size: 8px;
+                opacity: 0.5;
+                padding: 0.5rem;
+                margin-top: 5px;
+                border-radius: 8px;
+            }
+            .schema-skills img{
+                width: 70%;
+                margin-top: 20px;
+            }
+        }
+    .softSkill {
+        display: block;
+        margin: 20px 1rem;
+        .box {
+            display: flex;
+            padding: 15px 0;
+            margin: 20px 0;
 
+            ul {
+                flex-direction: column;
+                li {
+                    width: 200px;
+                }
+            }
+        }
+    }
+    .learn-skills {
+        align-items: center;
+        ul {
+            flex-direction: column;
+        }
+        .skill-circle {
+            width: 175px;
+            height: 175px;
+        }
+    }
+}}
+@media screen and (max-width: 768px) {
+    .skill-container {
+        margin: 1rem 2rem;
+        .cards-skills {
+            margin-top: 5px;
+        }
+        .skill .schema-skills img {
+            width: 50%;
+            margin: 2rem 0;
+        }
+        .softSkill {
+            display: block;
+            h2 {
+                margin-bottom: 20px;
+            }
+            .box {
+                width: auto;
+                margin-bottom: 30px;
+                gap: 30px; 
+                ul {
+                    gap: 30px;
+                    li {
+                    font-size: 15px;
+                    }
+                }
+            }
+        }
+        .learn-skills {
+            .skill-circle {
+                width: 150px;
+                height: 150px;
+                ul {
+                    gap: 30px;
+                    li {
+                    font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .skill-container {
+        .cards-skills {
+            margin-top: 5px;
+        }
+        .softSkill {
+            display: block;
+            h2 {
+                margin-bottom: 20px;
+            }
+            .box {
+                width: auto;
+                margin-bottom: 50px;
+                gap: 40px; 
+            }
+        }
+        .learn-skills {
+            .skill-circle {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
 // contact formulaire 
 
 .contactForm {
@@ -361,3 +597,25 @@ textarea {
     color: $accent-color;
     font-size: 12px;
 }
+
+// fleche scroll
+.contenair-main {
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        color: $accent-color;
+        border: 1px solid $accent-color;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 33px;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in-out;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+}
+  

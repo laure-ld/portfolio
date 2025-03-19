@@ -67,3 +67,53 @@ nav.open {
         background-color: $text-color;
     }
 }
+
+// responsive 
+
+@media screen and (max-width: 375px) {
+    .container {
+        .logo {
+            width: 13%;
+        }
+        nav {
+            right: 10px;
+            width: 97%;
+            top: 50px;
+            height: auto;
+            ul {
+                gap: 0.5rem;
+                flex-direction: row;
+                justify-content: center;
+                padding: 15px;
+                a {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        .logo {
+            width: 10%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        .logo {
+            width: 7%;
+        }
+        nav {
+            top: 55px;
+            ul {
+                padding: 20px;
+                a{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
