@@ -48,10 +48,15 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                
+                cursor: pointer;
+                opacity: 0.5;
                 img {
                         width: 40px;
                     }
+            }
+            .button-container:hover {
+                background-color: $box-color;
+                opacity: 1;
             }
         }
     }
