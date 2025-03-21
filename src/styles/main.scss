@@ -93,7 +93,7 @@
         }
 
         &:nth-child(3) {
-            width: 500px;
+            width: 480px;
             animation-duration: 32s;
         }
     }
@@ -120,35 +120,10 @@
     }
 }
 
-    // Responsive About 
-@media screen and (max-width: 767px) {
+ // Responsive About 
+@media screen and (max-width: 1024px) {
     .about-me {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        .about-content {
-        .buttons {
-            margin: 1rem 0;
-            gap: 2rem;
-            justify-content: center;
-    
-            .button-container {
-                height: 3rem;
-                width: 8rem;
-            }
-        }}
-        .animation {
-            .circle-1 {
-                height: 150px;
-                width: 150px;
-            }
-            .circle:nth-child(2) {
-                width: 200px;
-            }
-            .circle:nth-child(3) {
-                width: 250px;
-            }
-        }
+        padding: 100px 2rem;
     }
 }
 @media screen and (max-width: 768px) {
@@ -180,12 +155,39 @@
         }
     }
 }
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
     .about-me {
-        padding: 100px 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        
+        .about-content {
+            .buttons {
+                margin: 1rem 0;
+                gap: 2rem;
+                justify-content: center;
+
+                .button-container {
+                    height: 3rem;
+                    width: 8rem;
+                }
+            }
+        }
+        .animation {
+            .circle-1 {
+                height: 150px;
+                width: 150px;
+            }
+            .circle:nth-child(2) {
+                width: 200px;
+            }
+            .circle:nth-child(3) {
+                width: 250px;
+            }
+        }
     }
 }
+
 // Carrousel 
 .slide-container {
     width: 100%;
@@ -205,9 +207,18 @@
     }
 
     .objectif {
-        padding: 20px 0;
+        padding: 40px 0;
+        font-size: 20px;
+        text-align: left;
     }
+    .tech {
+        display: flex;
+        gap: 10px;
 
+        .tech-title {
+            font-size: 20px;
+        }
+    }
     .slide-image {
         position: absolute;
         width: 100%;
@@ -268,6 +279,24 @@
 }
 
     // responsive carrousel
+@media screen and (max-width: 768px) {
+    .slide-container{
+        &.split {
+            .slide-info {
+                width: 32%;
+                padding: 50px 0;
+                align-items: center;
+                ul {
+                    flex-direction: row;
+                    gap: 5px;
+                    li {
+                    font-size: 15px;
+                    }
+                }
+            }
+        }
+    }  
+}
 @media screen and (max-width: 767px) {
     .slide-container{
         height: 300px;
@@ -297,25 +326,6 @@
     } 
 }
 
-@media screen and (max-width: 768px) {
-    .slide-container{
-        &.split {
-            .slide-info {
-                width: 32%;
-                padding: 50px 0;
-                align-items: center;
-                ul {
-                    flex-direction: row;
-                    gap: 5px;
-                    li {
-                    font-size: 15px;
-                    }
-                }
-            }
-        }
-    }  
-}
-
 // Skills
 .skill-container {
     margin: 1rem 0;
@@ -324,29 +334,29 @@
     flex-direction: column;
     text-align: center;
 
-    .cards-skills {
-        border: 1px solid $accent-color;
-        opacity: 0.5;
-        padding: 0.5rem;
-        border-radius: 10px;
-        box-shadow: -2px 3px 1px 0px rgba(121, 121, 121, 0.78);
-        transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-
-        &:hover{
-            opacity: 1;
-            transform: translateY(-2px);
-            box-shadow: -2px 5px 5px rgba(121, 121, 121, 0.5);
-        }
-    }
-
     .skill {
         padding-top: 50px;
+        .cards-skills {
+            border: 1px solid $accent-color;
+            opacity: 0.5;
+            padding: 0.5rem;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: -2px 3px 1px 0px rgba(121, 121, 121, 0.78);
+            transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    
+            &:hover{
+                opacity: 1;
+                transform: translateY(-2px);
+                box-shadow: -2px 5px 5px rgba(121, 121, 121, 0.5);
+            }
+        }
         .schema-skills {
             display: flex;
             justify-content: center;
-    
             img {
-                width: 40%;
+                width: 35%;
+                margin: 40px;
             }
         }
     }
@@ -400,7 +410,7 @@
     }
     .learn-skills {
         margin: 50px 0;
-        gap: 30px;
+        gap: 60px;
         display: flex;
         flex-direction: column;
         
@@ -417,7 +427,71 @@
 }
 }
     // responsive Skills 
-    
+@media screen and (max-width: 1024px) {
+    .skill-container {
+        .cards-skills {
+            margin-top: 5px;
+        }
+        .softSkill {
+            display: block;
+            h2 {
+                margin-bottom: 20px;
+            }
+            .box {
+                width: auto;
+                margin-bottom: 50px;
+                gap: 40px; 
+            }
+        }
+        .learn-skills {
+            .skill-circle {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}   
+@media screen and (max-width: 768px) {
+    .skill-container {
+        margin: 1rem 2rem;
+        .cards-skills {
+            margin-top: 5px;
+        }
+        .skill .schema-skills img {
+            width: 50%;
+            margin: 2rem 0;
+        }
+        .softSkill {
+            display: block;
+            h2 {
+                margin-bottom: 20px;
+            }
+            .box {
+                width: auto;
+                margin-bottom: 30px;
+                gap: 30px; 
+                ul {
+                    gap: 30px;
+                    li {
+                    font-size: 15px;
+                    }
+                }
+            }
+        }
+        .learn-skills {
+            .skill-circle {
+                width: 150px;
+                height: 150px;
+                ul {
+                    gap: 30px;
+                    li {
+                    font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 767px) {
     .skill-container {
         margin: 1rem;
@@ -461,72 +535,7 @@
         }
     }
 }}
-@media screen and (max-width: 768px) {
-    .skill-container {
-        margin: 1rem 2rem;
-        .cards-skills {
-            margin-top: 5px;
-        }
-        .skill .schema-skills img {
-            width: 50%;
-            margin: 2rem 0;
-        }
-        .softSkill {
-            display: block;
-            h2 {
-                margin-bottom: 20px;
-            }
-            .box {
-                width: auto;
-                margin-bottom: 30px;
-                gap: 30px; 
-                ul {
-                    gap: 30px;
-                    li {
-                    font-size: 15px;
-                    }
-                }
-            }
-        }
-        .learn-skills {
-            .skill-circle {
-                width: 150px;
-                height: 150px;
-                ul {
-                    gap: 30px;
-                    li {
-                    font-size: 15px;
-                    }
-                }
-            }
-        }
-    }
-}
 
-@media screen and (max-width: 1024px) {
-    .skill-container {
-        .cards-skills {
-            margin-top: 5px;
-        }
-        .softSkill {
-            display: block;
-            h2 {
-                margin-bottom: 20px;
-            }
-            .box {
-                width: auto;
-                margin-bottom: 50px;
-                gap: 40px; 
-            }
-        }
-        .learn-skills {
-            .skill-circle {
-                width: 200px;
-                height: 200px;
-            }
-        }
-    }
-}
 // contact formulaire 
 
 .contactForm {
@@ -607,7 +616,7 @@ textarea {
 .contenair-main {
     .back-to-top {
         position: fixed;
-        bottom: 20px;
+        bottom: 4rem;
         right: 20px;
         color: $accent-color;
         border: 1px solid $accent-color;

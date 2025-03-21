@@ -70,7 +70,29 @@ nav.open {
 }
 
 // responsive 
-
+@media screen and (max-width: 768px) {
+    .container {
+        .logo {
+            width: 7%;
+        }
+        nav {
+            top: 55px;
+            ul {
+                padding: 20px;
+                a{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .container {
+        .logo {
+            width: 10%;
+        }
+    }
+}
 @media screen and (max-width: 375px) {
     .container {
         .logo {
@@ -88,31 +110,6 @@ nav.open {
                 padding: 15px;
                 a {
                     font-size: 0.8rem;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .container {
-        .logo {
-            width: 10%;
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        .logo {
-            width: 7%;
-        }
-        nav {
-            top: 55px;
-            ul {
-                padding: 20px;
-                a{
-                    font-size: 1.5rem;
                 }
             }
         }
