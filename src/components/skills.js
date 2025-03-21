@@ -9,23 +9,23 @@ function skills () {
                 </div>
             </div>      
             <div className="softSkill" id="soft">
-                <h2>Mes Soft skills</h2>
+                <h2>Mes soft skills</h2>
                 <div className="box" >
                     <h3>Qualités interpersonnelles</h3>
                         <ul>
                             <li>Écoute active & empathie</li>
-                            <li>Curiosité et veille technologique</li>
+                            <li>Curiosité & veille technologique</li>
                             <li>Capacité d’adaptation rapide</li>
-                            <li>Transmission et esprit collaboratif</li>
+                            <li>Transmission & esprit collaboratif</li>
                         </ul>
                 </div>
                 <div className="box">
-                    <h3>Méthodologie & Organisation</h3>
+                    <h3>Méthodologie & organisation</h3>
                         <ul>
-                            <li>Planification et gestion de projet</li>
-                            <li>Respect des échéances et priorisation</li>
-                            <li>Résolution de problèmes et esprit critique</li>
-                            <li>Apprentissage autonome et montée en compétence</li>
+                            <li>Planification & gestion de projet</li>
+                            <li>Respect des échéances & priorisation</li>
+                            <li>Résolution de problèmes & esprit critique</li>
+                            <li>Apprentissage autonome & montée en compétence</li>
                         </ul>
                 </div>
                 <div className="learn-skills">

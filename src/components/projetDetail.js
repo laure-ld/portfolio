@@ -34,12 +34,15 @@ const ProjetDetail = () => {
                 <div className="infoProjet">
                     <h2>{projet.name}</h2>
                     <p><strong>Objectif : </strong> {projet.objectif}</p>
-                    <p><strong>Technologie utilisé :</strong> {projet.technologie}</p>
+                    <div className="tech">
+                        <p><strong>Technologie utilisé :</strong></p>
+                        <p className="tech-list">{projet.technologie}</p>
+                    </div>
                 </div>
             </div>
 
             <div className="detailProjet">
-                <p><strong>Description du projet :</strong>{projet.description}</p>
+                <p>{projet.description}</p>
                 <p>{projet.retour_experience}</p>
             </div>
         </section>

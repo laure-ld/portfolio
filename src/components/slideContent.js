@@ -17,13 +17,15 @@ const SlideContent = ({ slide }) => {
             <button  onClick={() => navigate(`/projets/${slide.id}`)} className="page-project">
                 <div className="slide-info">
                     <h3>{slide.name}</h3> - <p className="date">{slide.date}</p>
-                    <p className="objectif">Objectif du projet : {slide.objectif}</p>
-                    <p className="tech-title">Technologies utilisées :</p>
-                    <ul className="tech-list">
-                    {slide.technologie.map((tech, index) => (
-                        <li key={index}>{tech}</li>
-                    ))}
-                    </ul>
+                    <p className="objectif">{slide.objectif}</p>
+                    <div className="tech">
+                        <p className="tech-title">Technologies utilisées :</p>
+                        <ul className="tech-list">
+                        {slide.technologie.map((tech, index) => (
+                            <li key={index}>{tech}</li>
+                        ))}
+                        </ul>
+                    </div>
                 </div>
             </button>
         </div>
