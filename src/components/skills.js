@@ -30,11 +30,17 @@ function skills () {
                 </div>
                 <div className="learn-skills">
                     <h2>Les techniques vers lesquels je me dirige</h2>
-                        <ul>
-                            <li className="skill-circle">Python</li>
-                            <li className="skill-circle">WEB3</li>
-                            <li className="skill-circle">FastAPI</li>
-                        </ul>
+                    <ul>
+                        <li className="skill-circle">
+                            <img src="/images/python.png" alt="Python" className="learn-python"/>
+                        </li>
+                        <li className="skill-circle">
+                            <img src="/images/web3.png" alt="WEB3" className="learn-web3"/>
+                        </li>
+                        <li className="skill-circle">
+                            <img src="/images/fastapi.png" alt="FastAPI" className="learn-fastapi"/>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
