@@ -35,9 +35,10 @@ const ProjetDetail = () => {
                     <h2>{projet.name}</h2>
                     <p><strong>Objectif : </strong> {projet.objectif}</p>
                     <div className="tech">
-                        <p><strong>Technologie utilisé :</strong></p>
+                        <p><strong>Technologie : </strong></p>
                         <p className="tech-list">{projet.technologie}</p>
                     </div>
+                    <p className="tech-competence"><strong>Compétence technologie : </strong>{projet.competences}</p>
                 </div>
             </div>
 
