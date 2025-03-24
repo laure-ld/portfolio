@@ -25,7 +25,7 @@ function Header () {
                         </svg>
                 </button>
             )}
-            <nav id="menu" className={`menu ${isOpen ? 'open' : ''}`} onClick={handleOnClick}>
+            <nav id="menu" className={`menu ${isOpen ? 'open' : ''}`} onClick={handleOnClick} alt="menu deroulant">
                 <ul>
                     <li><a href="#projets">Projets</a></li>
                     <li><a href="#competence">Compétences</a></li>
