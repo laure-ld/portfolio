@@ -36,9 +36,20 @@ const ProjetDetail = () => {
                     <p><strong>Objectif : </strong> {projet.objectif}</p>
                     <div className="tech">
                         <p><strong>Technologie : </strong></p>
-                        <p className="tech-list">{projet.technologie}</p>
+                        <ul className="tech-list">
+                            {projet.technologie.map((tech, index) => (
+                                <li key={index}>{tech},</li>
+                            ))}
+                        </ul>
                     </div>
-                    <p className="tech-competence"><strong>Compétence technologie : </strong>{projet.competences}</p>
+                    <div className="tech-competence">
+                        <p><strong>Compétences techniques : </strong></p>
+                        <ul>
+                            {projet.competences.map((competence, index) => (
+                                <li key={index}>&#9205; {competence}</li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
 

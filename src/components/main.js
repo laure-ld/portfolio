@@ -37,7 +37,7 @@ function Main() {
             <ContactForm />
             {isVisible && (
                 <button id="backToTop" className="back-to-top" aria-label="Retour en haut" onClick={scrollToTop}>
-                &#8638;
+                &#8593;
                 </button>
             )}
         </section>

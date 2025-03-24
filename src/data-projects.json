@@ -7,7 +7,7 @@
         "name" : "Back-end d'un site de notation de livres",
         "github" : "https://github.com/laure-ld/P7-Dev-Web-livres.git",
         "objectif": "Mettre en place le Backend pour un site de notation de livres pour une librairie.",
-        "technologie": ["React", "Express", "MongoDB", "Mongoose"],
+        "technologie": [" React", " Express", " MongoDB", " Mongoose"],
         "competences": ["Adaptabilité face aux erreurs et aux contraintes du projet",  "Résolution de problèmes"],
         "description": " Le projet consiste à développer un serveur Express connecté à une base de données MongoDB avec Mongoose. Il inclut la modélisation des données et l’implémentation des opérations CRUD pour gérer les livres et leurs notations, en assurant la sécurité des données. Un système d’authentification sécurisé sera mis en place, ainsi que la gestion du téléchargement et de l’optimisation des images. Les utilisateurs pourront noter les livres et une moyenne sera calculée automatiquement. L’application suivra une architecture MVC et respectera les bonnes pratiques du Green Code pour minimiser son empreinte écologique.",
         "retour_experience": "J’ai travaillé exclusivement sur le backend et rencontré des difficultés avec le code du frontend, notamment la cohérence des noms et les contraintes ESLint. J’ai bien assimilé le système CRUD et les schémas Mongoose. À l’avenir, j’améliorerais la sécurité avec Yup et implémenterais une authentification OAuth."
