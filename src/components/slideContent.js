@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useSwiperSlide } from "swiper/react";
 
 const SlideContent = ({ slide }) => {
     const [isExpanded, setIsExpanded] = useState(true);
-    const { isActive } = useSwiperSlide();
     const navigate = useNavigate();
 
     return (

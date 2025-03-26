@@ -3,7 +3,7 @@ function skills () {
         <div className="skill-container">
             <div className="skill" id="competence">
                 <h2>Mes compétences</h2>
-                <button onClick={() => window.open("https://miro.com/app/board/uXjVIWwAwJY=/?share_link_id=448433351909", "_blank")} className="cards-skills">Retrouvez ma carte mental</button>
+                <button onClick={() => window.open("https://miro.com/app/board/uXjVIWwAwJY=/?share_link_id=448433351909", "_blank")} className="cards-skills">Retrouvez ma carte mentale</button>
                 <div className="schema-skills">
                     <img src="/images/skills.png" alt="Mes compétences technique"/>
                 </div>

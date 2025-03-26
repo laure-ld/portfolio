@@ -27,7 +27,7 @@ const ProjetDetail = () => {
                 >
                     {projet.projet.map((image, index) => (
                         <SwiperSlide key={index} className="swipperImg">
-                            <img src={image} alt={`Image ${index + 1} du projet`}/>
+                            <img src={image} alt={`${index + 1} du projet`}/>
                         </SwiperSlide>
                     ))}
                 </Swiper>
