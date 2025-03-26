@@ -9,7 +9,7 @@
 
     .logo {
         width: 15%;
-        padding: 10px
+        margin: 10px;
     }
 
     nav {
@@ -107,18 +107,18 @@ nav.open {
 @media screen and (max-width: 375px) {
     .container {
         .logo {
-            width: 13%;
+            width: 15%;
         }
         nav {
-            right: 10px;
-            width: 97%;
+            right: 0;
+            width: 30%;
             top: 50px;
             height: auto;
             ul {
                 gap: 0.5rem;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: center;
-                padding: 15px;
+                margin: 30px 15px;
                 a {
                     font-size: 0.8rem;
                 }
