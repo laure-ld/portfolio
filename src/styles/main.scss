@@ -199,7 +199,7 @@
     height: 500px;
     position: relative;
     overflow: hidden;
-    transition: all 1s ease-in-out;
+    transition: all 0.8s ease-in-out;
     display: flex;
     align-items: flex-start;
 
@@ -228,14 +228,15 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        transition: width 1s ease-in-out;
+        transition: width 1s ease-in-out, left 1s ease-in-out;
         object-fit: contain;
     }
 
     .slide-info {
         position: absolute;
         opacity: 0;
-        transition: transform 1.5s linear;
+        transform: translateX(50%);
+        transition: opacity 1s ease-in-out;
         flex-direction: column;
         min-width: 35%;
         ul {
@@ -528,6 +529,7 @@
         }
         .skill { 
             padding: 0;
+            margin-top: 50px;
             .schema-skills img {
             width: 50%;
             margin: 2rem 0;
