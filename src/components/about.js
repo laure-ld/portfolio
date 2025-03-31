@@ -6,7 +6,7 @@ function About() {
         <div className="about-content">
             <h1>Laure Loda</h1>
             <h2>Développeuse Web</h2>
-            <p>Passionnée par le développement web, j’ai d’abord suivi un parcours en psychologie et ergonomie des IA avant de me tourner pleinement vers cette voie.Aujourd’hui, je me forme avec un objectif clair : devenir architecte blockchain.</p>
+            <p>Passionné par le développement web, j’ai exploré la psychologie et l’ergonomie des IA avant de m’y consacrer pleinement. Aujourd’hui, je développe mes compétences en menant des projets concrets, alliant innovation et apprentissage continu.</p>
             <div className='buttons'> 
                 <div className='button-container'>
                     <a href="./CV.pdf" download className="download-btn">CV</a>
